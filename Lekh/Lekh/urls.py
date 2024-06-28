@@ -1,5 +1,5 @@
 """
-URL configuration for Ecommerce project.
+URL configuration for Lekh project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -15,15 +15,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path,include
-
-# import products
-from pages.views import home_page,contact_page,aboutus_page
+from django.urls import path
 
 urlpatterns = [
-    path("products/",include('products.urls')),
     path('admin/', admin.site.urls),
-    path('',home_page,),
-    path('contact/',contact_page,),
-    path('aboutus/',aboutus_page),
 ]
