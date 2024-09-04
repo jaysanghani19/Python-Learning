@@ -1,8 +1,0 @@
-{%extends "base.html"%}
-{%block content%}
-{%for instance in object%}
-    <h2> {{instance.title}} </h2>
-    <p> {{instance.id}}  {{instance.description}} </p>
-    <a href='{{instance.get_url}}'> Link </a>
-{%endfor%}
-{%endblock%}
